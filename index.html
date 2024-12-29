@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotosApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/1c8ee7cda6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="bg-gray-300 min-h-screen p-3 flex flex-col items-center"
+      id="main"
+    >
+      <form
+        id="form"
+        class="sm:h-14 flex flex-row items-center text-1xl w-full md:w-2/3 lg:w-1/2 bg-white shadow-lg rounded-full"
+      >
+        <button
+          class="sm:text-2xl sm:w-14 sm:h-14 btn w-10 h-10"
+          id="searchBtn"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass text-teal-600 font-semibold"
+          ></i>
+        </button>
+        <input
+          class="sm:text-2xl outline-none bg-white flex-grow rounded-full pl-1 font-semibold text-teal-600"
+          type="text"
+          id="input"
+          placeholder="search for photos ex:India"
+        />
+      </form>
+
+      <div
+        class="mx-auto max-w-[1400px] my-4 sm:columns-2 lg:columns-4 gap-3 space-y-3"
+        id="photosCont"
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

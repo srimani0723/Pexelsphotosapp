@@ -1,0 +1,5 @@
+.cont {
+  margin: 20px auto;
+  columns: 3;
+  column-gap: 10px;
+}
